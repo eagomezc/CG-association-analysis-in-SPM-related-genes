@@ -1,0 +1,52 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr 19
+  --covar clean_cov_chr19_GPR32_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chr19_GPR32_RA
+  --freq counts
+  --from-kb 50774
+  --logistic dominant sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom
+  --to-kb 51775
+
+Hostname: emf13
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 16:51:50 2022
+
+Random number seed: 1645635110
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (14670 variants, 207027 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom-temporary.fam
+written.
+397 out of 14670 variants loaded from .bim file.
+207027 people (87615 males, 119412 females) loaded from .fam.
+207027 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s), and 1 person was not seen in the covariate file.
+Before main variant filters, 207027 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.995185.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom.frq.counts
+.
+397 variants and 207027 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202906 are controls.
+Writing logistic model association results to
+../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom.assoc.logistic
+... done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.20443.
+--adjust values (397 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/19_all/GPR32/log_chr19_GPR32_RA_dom.assoc.logistic.adjusted
+.
+
+End time: Wed Feb 23 17:00:33 2022

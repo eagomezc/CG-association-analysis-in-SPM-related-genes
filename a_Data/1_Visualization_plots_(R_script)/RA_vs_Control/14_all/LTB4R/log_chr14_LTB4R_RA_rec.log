@@ -1,0 +1,52 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr 14
+  --covar clean_cov_chr14_LTB4R_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chr14_LTB4R_RA
+  --freq counts
+  --from-kb 24281
+  --logistic recessive sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec
+  --to-kb 25287
+
+Hostname: emf11
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 13:37:43 2022
+
+Random number seed: 1645623463
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (18120 variants, 207025 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec-temporary.fam
+written.
+255 out of 18120 variants loaded from .bim file.
+207025 people (87614 males, 119411 females) loaded from .fam.
+207025 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s).
+Before main variant filters, 207025 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.995505.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec.frq.counts
+.
+255 variants and 207025 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202904 are controls.
+Writing logistic model association results to
+../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec.assoc.logistic
+... done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.02883.
+--adjust values (237 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/14_all/LTB4R/log_chr14_LTB4R_RA_rec.assoc.logistic.adjusted
+.
+
+End time: Wed Feb 23 14:00:34 2022

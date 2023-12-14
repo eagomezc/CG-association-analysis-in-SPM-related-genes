@@ -1,0 +1,52 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr 8
+  --covar clean_cov_chr8_EPHX2_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chr8_EPHX2_RA
+  --freq counts
+  --from-kb 26848
+  --logistic dominant sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom
+  --to-kb 27903
+
+Hostname: emf12
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 15:51:01 2022
+
+Random number seed: 1645631461
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (29128 variants, 207026 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom-temporary.fam
+written.
+249 out of 29128 variants loaded from .bim file.
+207026 people (87615 males, 119411 females) loaded from .fam.
+207026 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s), and 1 person was not seen in the covariate file.
+Before main variant filters, 207026 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.994908.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom.frq.counts
+.
+249 variants and 207026 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202905 are controls.
+Writing logistic model association results to
+../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom.assoc.logistic
+... done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.
+--adjust values (244 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/8_all/EPHX2/log_chr8_EPHX2_RA_dom.assoc.logistic.adjusted
+.
+
+End time: Wed Feb 23 16:04:24 2022

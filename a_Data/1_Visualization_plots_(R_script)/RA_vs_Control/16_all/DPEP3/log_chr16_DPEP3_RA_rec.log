@@ -1,0 +1,52 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr 16
+  --covar clean_cov_chr16_DPEP3_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chr16_DPEP3_RA
+  --freq counts
+  --from-kb 67510
+  --logistic recessive sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec
+  --to-kb 68515
+
+Hostname: emf2
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 15:58:33 2022
+
+Random number seed: 1645631913
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (19689 variants, 207027 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec-temporary.fam
+written.
+122 out of 19689 variants loaded from .bim file.
+207027 people (87615 males, 119412 females) loaded from .fam.
+207027 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s), and 1 person was not seen in the covariate file.
+Before main variant filters, 207027 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.996172.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec.frq.counts
+.
+122 variants and 207027 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202906 are controls.
+Writing logistic model association results to
+../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec.assoc.logistic
+... done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.
+--adjust values (110 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/16_all/DPEP3/log_chr16_DPEP3_RA_rec.assoc.logistic.adjusted
+.
+
+End time: Wed Feb 23 16:07:01 2022

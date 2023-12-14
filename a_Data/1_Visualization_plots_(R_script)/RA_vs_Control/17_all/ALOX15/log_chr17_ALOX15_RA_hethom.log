@@ -1,0 +1,51 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr 17
+  --covar clean_cov_chr17_ALOX15_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chr17_ALOX15_RA
+  --freq counts
+  --from-kb 4034
+  --logistic hethom sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom
+  --to-kb 5046
+
+Hostname: emf11
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 16:11:01 2022
+
+Random number seed: 1645632661
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (18107 variants, 207027 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom-temporary.fam
+written.
+333 out of 18107 variants loaded from .bim file.
+207027 people (87615 males, 119412 females) loaded from .fam.
+207027 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s), and 1 person was not seen in the covariate file.
+Before main variant filters, 207027 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.995968.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom.frq.counts
+.
+333 variants and 207027 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202906 are controls.
+Writing logistic model association results to
+../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom.assoc.logistic
+... done.
+--adjust values (316 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/17_all/ALOX15/log_chr17_ALOX15_RA_hethom.assoc.logistic.adjusted
+.
+
+End time: Wed Feb 23 16:21:42 2022

@@ -1,0 +1,48 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --file clean_ukb_chr7_RA
+  --model-dom
+  --mperm 1000
+  --out ../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA
+
+Hostname: sdx15
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Thu Jul 16 05:31:00 2020
+
+Note: --model-dom flag deprecated.  Use '--model dom'.
+Note: --mperm flag deprecated.  Use e.g. '--model mperm=[value]'.
+Random number seed: 1594873860
+386451 MB RAM detected; reserving 193225 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (31426 variants, 207026 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA-temporary.fam
+written.
+31426 variants loaded from .bim file.
+207026 people (87615 males, 119411 females) loaded from .fam.
+207026 phenotype values loaded from .fam.
+Using up to 35 threads (change this with --threads).
+Before main variant filters, 207026 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.994173.
+31426 variants and 207026 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202905 are controls.
+Writing --model report to
+../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA.model
+... done.
+--adjust values (22514 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA.model.dom.adjusted
+.
+1000 max(T) permutations complete.
+Permutation test report written to
+../../output/8_statistical_analysis/RA_vs_Control/chr7/dom_ukb_chr7_RA.model.dom.mperm
+.
+
+End time: Thu Jul 16 05:42:44 2020

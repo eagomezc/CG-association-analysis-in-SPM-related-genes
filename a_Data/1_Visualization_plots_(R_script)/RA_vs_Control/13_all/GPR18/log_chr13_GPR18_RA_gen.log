@@ -1,0 +1,51 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr 13
+  --covar clean_cov_chr13_GPR18_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chr13_GPR18_RA
+  --freq counts
+  --from-kb 99407
+  --logistic genotypic sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen
+  --to-kb 100414
+
+Hostname: emf14
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 13:43:43 2022
+
+Random number seed: 1645623823
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (19445 variants, 207026 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen-temporary.fam
+written.
+186 out of 19445 variants loaded from .bim file.
+207026 people (87615 males, 119411 females) loaded from .fam.
+207026 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s), and 1 person was not seen in the covariate file.
+Before main variant filters, 207026 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.996278.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen.frq.counts
+.
+186 variants and 207026 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202905 are controls.
+Writing logistic model association results to
+../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen.assoc.logistic
+... done.
+--adjust values (169 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/13_all/GPR18/log_chr13_GPR18_RA_gen.assoc.logistic.adjusted
+.
+
+End time: Wed Feb 23 14:05:34 2022

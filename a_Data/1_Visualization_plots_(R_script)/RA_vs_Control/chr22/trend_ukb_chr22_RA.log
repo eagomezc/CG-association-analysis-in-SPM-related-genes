@@ -1,0 +1,49 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --file clean_ukb_chr22_RA
+  --model-trend
+  --mperm 1000
+  --out ../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA
+
+Hostname: sdx33
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Fri Jul 17 10:53:30 2020
+
+Note: --model-trend flag deprecated.  Use '--model trend'.
+Note: --mperm flag deprecated.  Use e.g. '--model mperm=[value]'.
+Random number seed: 1594979610
+386450 MB RAM detected; reserving 193225 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (9177 variants, 207027 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA-temporary.fam
+written.
+9177 variants loaded from .bim file.
+207027 people (87615 males, 119412 females) loaded from .fam.
+207027 phenotype values loaded from .fam.
+Using up to 35 threads (change this with --threads).
+Before main variant filters, 207027 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.994788.
+9177 variants and 207027 people pass filters and QC.
+Among remaining phenotypes, 4121 are cases and 202906 are controls.
+Writing --model report to
+../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA.model
+... done.
+--adjust: Genomic inflation est. lambda (based on median chisq) = 1.08086.
+--adjust values (9177 variants) written to
+../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA.model.trend.adjusted
+.
+1000 max(T) permutations complete.
+Permutation test report written to
+../../output/8_statistical_analysis/RA_vs_Control/chr22/trend_ukb_chr22_RA.model.trend.mperm
+.
+
+End time: Fri Jul 17 10:56:26 2020

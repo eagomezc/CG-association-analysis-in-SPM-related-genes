@@ -1,0 +1,48 @@
+PLINK v1.90b4.6 64-bit (15 Aug 2017)
+Options in effect:
+  --adjust
+  --chr X
+  --covar clean_cov_chrX_GPR101_RA.tab keep-pheno-on-missing-cov
+  --file clean_ukb_chrX_GPR101_RA
+  --freq counts
+  --from-kb 135612
+  --logistic hethom sex hide-covar
+  --out ../../output/8_statistical_analysis/RA_vs_Control/X_all/GPR101/log_chrX_GPR101_RA_hethom
+  --to-kb 136614
+
+Hostname: emf11
+Working directory: /data/WHRI-JDalliLab/Esteban/UKBiobank/RA_biobank/input/8_statistical_analysis
+Start time: Wed Feb 23 17:16:59 2022
+
+Random number seed: 1645636619
+773818 MB RAM detected; reserving 386909 MB for main workspace.
+Scanning .ped file...
+Possibly irregular .ped line.  Restarting scan, assuming multichar alleles.
+.ped scan complete (for binary autoconversion).
+Performing single-pass .bed write (14673 variants, 207025 people).
+--file:
+../../output/8_statistical_analysis/RA_vs_Control/X_all/GPR101/log_chrX_GPR101_RA_hethom-temporary.bed
++
+../../output/8_statistical_analysis/RA_vs_Control/X_all/GPR101/log_chrX_GPR101_RA_hethom-temporary.bim
++
+../../output/8_statistical_analysis/RA_vs_Control/X_all/GPR101/log_chrX_GPR101_RA_hethom-temporary.fam
+written.
+96 out of 14673 variants loaded from .bim file.
+207025 people (87614 males, 119411 females) loaded from .fam.
+207025 phenotype values loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 43 covariates loaded.
+1558 people had missing value(s), and 1 person was not seen in the covariate file.
+Before main variant filters, 207025 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.993678.
+--freq counts: Allele frequencies (founders only) written to
+../../output/8_statistical_analysis/RA_vs_Control/X_all/GPR101/log_chrX_GPR101_RA_hethom.frq.counts
+.
+96 variants and 207025 people pass filters and QC.
+Among remaining phenotypes, 4120 are cases and 202905 are controls.
+Excluding 96 nonautosomal variants from --linear/--logistic analysis
+(--xchr-model 0).
+Error: No variants remaining for --linear/--logistic analysis.
+
+End time: Wed Feb 23 17:22:31 2022
