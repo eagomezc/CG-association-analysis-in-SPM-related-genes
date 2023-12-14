@@ -14,7 +14,7 @@ In addition to this, I also used a couple of **R scripts** for summary statistic
 
 All the scripts and software used for the **PhD Thesis** were run in a standard computer (RAM: 8GB, CP$: 4 cores, 3.60 GHZ/core). 
 
-Big data analysis (including UK Biobank data manipulation and association analysis) were performed in the high-performance computing cluster of QMUL (more information [here](https://docs.hpc.qmul.ac.uk/)).
+Big data analysis (including UK Biobank data manipulation and association analysis) were performed in the high-performance computing cluster of QMUL (more information [here](https://docs.hpc.qmul.ac.uk/)). Running time in the cluster depends of memory availability. 
 
 ## System requirements:
 
@@ -58,9 +58,9 @@ The subfolders are:
 
 **1_Visualization_plots_(R_script)**: Contains a folder with summary statistics for all the SPM-related genes. In addition, it contains tables with gene's information (chromosome and gene name) and available information of the genes in UK Biobank. 
 
-**2_Meta-analysis_(METAL)**: Contains summary statistics files for meta-analysis in addition of the configuration file ([metal_RA_sig_with_MegaGWAS_sig_HE_SE.txt]()) to run METAL.
+**2_Meta-analysis_(METAL)**: Contains summary statistics files for meta-analysis in addition of the configuration file ([metal_RA_sig_with_MegaGWAS_sig_HE_SE.txt](https://github.com/eagomezc/CG-association-analysis-in-SPM-related-genes/blob/main/a_Data/2_Meta-analysis_(METAL)/metal_RA_sig_with_MegaGWAS_sig_HE_SE.txt)) to run METAL.
 
-**3_META_visualization_results**: Contains tab-delimited results from META analysis. 
+**3_METAL_visualization_results**: Contains tab-delimited results from META analysis. 
 
 More details about the format of this files can be seen in the comments of each script. 
 
