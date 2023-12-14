@@ -48,7 +48,7 @@ if (!require('gggenes')) install.packages('gggenes'); library('gggenes')
 
 The repository contains three folders: 
 
-## [a_Data](https://github.com/eagomezc/Machine-Learning-and-RA-treatment/tree/main/a_Data)
+## [a_Data](https://github.com/eagomezc/CG-association-analysis-in-SPM-related-genes/tree/main/a_Data)
 
 This folder contains, separated by subfolders, the different file formats that has to be used to run the different R scripts. 
 
@@ -64,17 +64,19 @@ The subfolders are:
 
 More details about the format of this files can be seen in the comments of each script. 
 
-## [b_R_Scripts](https://github.com/eagomezc/Machine-Learning-and-RA-treatment/tree/main/b_R_Scripts)
+## [b_R_Scripts](https://github.com/eagomezc/CG-association-analysis-in-SPM-related-genes/tree/main/b_R_Scripts)
 
-This folder contains the scripts used to create the support vector machine and random forest prediction models, in addition to the script used to run differential gene expression analysis of interested genes in the lipid mediator pathways. 
+This folder contains the scripts used to performed and analysed the candidate gene association analysis and meta-analysis. 
 
 The scripts are: 
 
-**1_machine_learning_(All_methodologies).R**: Using a training dataset, this script creates the machine learning models (Bayesian, Elastic net, SVM and random forest) used to predict the response to DMARD treatment in rheumatoid arthritis patient. The script works with the packages **classyfire, randomForest, glmnet, caret, arm** that use different machine learning methodologies and bootstrapping for the model creation. 
+**0_Candidate_gene_association_analysis_job.sh**: Using the genotype and phenotype information of cases and controls from UK Biobank, this script perfomed association analysis of selected SPM-related genes. The script **filter the cases and the controls**, performed **quality controls** steps and finally run the association analysis based on **additive, recessive and dominant genetic models**. 
 
-**2_randomForest_(RF_models).R**: Using a training dataset, this script creates the machine learning models used to predict the response to DMARD treatment in rheumatoid arthritis patient. The script works with the package **randomForest** that uses random forests and bootstrapping for the model creation. Besides that, estimate the **importance** of each lipid mediator in the improvement of the model's accuracy. Finally, it also uses the test cohort to evaluate the models and estimate the area under the receiver operating characteristic curves (AUC). 
+**1_Visualization_plots_(R_script).R**: Takes the summary statistics obtained from the previous script and generate a manhattan plot for visualization of genetic variants associated with rheumatoid arthritis.
 
-**3_DGE_analysis_(Edge_R).R**: Using RNA-seq raw read counts, this scripts performs differential gene expression analysis using the package **Edge R**, that uses the quasi-likelihood method to identify differences in the expression levels of specific genes between the DMARD responder and Non Responder rheumatoid arthritis patients. It also creates violin plots as a way to visualize the different gene expression levels.
+**NOTE**: Meta-analysis using METAL are run using the terminal. To run METAL I used the following command: **../metal config.txt**. 
+
+**3_METAL_visualization_results_(R_script).R**: Taking the meta-analysis results from the previous analysis, this script generates a forest plot highlighting the effect size of the candidate genetic variant.  
 
 More details of how the scripts works can be seen in the comments of each script. 
 
@@ -84,21 +86,15 @@ This folder contains, separated by subfolders, the different expected outputs th
 
 The subfolders are:
 
-**1_machine_learning_(All_methodologies).R**: The expected results from this script are a tab-delimited file containing a table with the model's names, the machine learning strategy used, their accuracy percentages, sensitivity, specificity and confusion table; a figure of all the models with their accuracy score, the tunning parameters figure and the different models saved as an R object that can be used in the future.  
+**1_Visualization_plots_(R_script)**: The expected results from this script are candidate gene summarize statistics and manhattan plots for visualization. 
 
-**2_randomForest_(RF_models)**: The expected results from this script are a tab-delimited file containing a table with the model's names, their accuracy percentages and their AUC values after evaluation with the test cohort; the different models saved as an R object that can be used in the future; and pdf files that contains plots associated with the performance of the models and the importance of each lipid mediator in the construction of the models. 
-
-**3_DGE_analysis_(Edge_R)**: The expected results from this script is a tab-delimited file containing a table with the gene's names, their log(FC), log(CPM), F value, p value and adjust p value (FDR). In addition, is expected to generate a pdf file with violin plots of ALOX-related enzymes.
+**3_METAL_visualization_results_(R_script)**: The expected results from this script are a tab-delimited file containing meta-analysis results including genetic variants' information (location, p-values, beta scores, odd-ratios, etc.) and Forest plot summarizing the results.  
 
 More details about how this files are generated can be seen in the comments of each script. 
 
 # Publication:
 
-Part of the results from this section of my thesis are described in the following paper: 
-
-[Gomez, E.A., Colas, R.A., Souza, P.R., Hands, R., Lewis, M.J., Bessant, C., Pitzalis, C., Dalli, J., 2020. Blood pro-resolving mediators are linked with synovial pathology and are predictive of DMARD responsiveness in rheumatoid arthritis. Nat Commun 11, 5420.](https://www.nature.com/articles/s41467-020-19176-z) 
- 
- 
+Part of the results from this section of my thesis are described in a puplication that is been peer-reviewed. 
 
 
 
