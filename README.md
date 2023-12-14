@@ -80,7 +80,7 @@ The scripts are:
 
 More details of how the scripts works can be seen in the comments of each script. 
 
-## [c_Expected_Output](https://github.com/eagomezc/Machine-Learning-and-RA-treatment/tree/main/c_Expected_Output)
+## [c_Expected_Output](https://github.com/eagomezc/CG-association-analysis-in-SPM-related-genes/tree/main/c_Expected_Output)
 
 This folder contains, separated by subfolders, the different expected outputs that can be obtain after running the R scripts. Each subfolder has the name of the specific script that generates it, in addition to the number of the script, to make more clear what file is the result of what script. At the moment to download this repository in a local computer, it's important to remember that all the **output pathways in the scripts has to be changed**.
 
