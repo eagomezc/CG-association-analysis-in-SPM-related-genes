@@ -94,7 +94,7 @@ More details about how this files are generated can be seen in the comments of e
 
 # Publication:
 
-Part of the results from this section of my thesis are described in a puplication that is been peer-reviewed. 
+Results from this section are part of a publication draft that it hasn't been submitted.  
 
 
 
